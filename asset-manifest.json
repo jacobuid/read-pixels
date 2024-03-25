@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/read-pixels/static/css/main.cf780922.css",
+    "main.js": "/read-pixels/static/js/main.99ae5c95.js",
+    "static/js/787.174abbef.chunk.js": "/read-pixels/static/js/787.174abbef.chunk.js",
+    "static/media/bg1.jpg": "/read-pixels/static/media/bg1.411eaf8dbd0a332b59be.jpg",
+    "static/media/Poppins-Thin.ttf": "/read-pixels/static/media/Poppins-Thin.59ff6a729e30c99b478e.ttf",
+    "static/media/Poppins-ExtraLight.ttf": "/read-pixels/static/media/Poppins-ExtraLight.333cb30c20e31999802a.ttf",
+    "static/media/Poppins-Light.ttf": "/read-pixels/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Regular.ttf": "/read-pixels/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/read-pixels/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/read-pixels/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/read-pixels/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/read-pixels/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
+    "static/media/Poppins-Black.ttf": "/read-pixels/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/retro-gaming.ttf": "/read-pixels/static/media/retro-gaming.c1a52a602585b2d6baf8.ttf",
+    "static/media/abc-logo.svg": "/read-pixels/static/media/abc-logo.ad27a39955713e59bb9870efecd85e08.svg",
+    "index.html": "/read-pixels/index.html",
+    "main.cf780922.css.map": "/read-pixels/static/css/main.cf780922.css.map",
+    "main.99ae5c95.js.map": "/read-pixels/static/js/main.99ae5c95.js.map",
+    "787.174abbef.chunk.js.map": "/read-pixels/static/js/787.174abbef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf780922.css",
+    "static/js/main.99ae5c95.js"
+  ]
+}
