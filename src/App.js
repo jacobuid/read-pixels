@@ -1,6 +1,6 @@
 import logo from './utils/abc-logo.svg';
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Uppercase from './routes/Uppercase';
 import Lowercase from './routes/Lowercase';
 
@@ -70,11 +70,15 @@ function App() {
             <main id="main">
                 <HashRouter basename="/read-pixels">
                     <Routes>
-                        <Route path="/uppercase" />{' '}
+                        <Route path="/uppercase" element={<Uppercase />} />{' '}
                         {/* 👈 Renders at /#/app/ */}
                         <Route path="/lowercase" element={<Lowercase />} />
                     </Routes>
                 </HashRouter>
+
+                <Routes>
+                    <Route path="/uppercase" element={<Uppercase />} />
+                </Routes>
             </main>
             <footer id="footer"></footer>
         </div>
