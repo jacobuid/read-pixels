@@ -68,10 +68,13 @@ function App() {
                 </div>
             </header>
             <main id="main">
-                <Routes>
-                    <Route path="/uppercase" element={<Uppercase />} />
-                    <Route path="/lowercase" element={<Lowercase />} />
-                </Routes>
+                <HashRouter basename="/read-pixels">
+                    <Routes>
+                        <Route path="/uppercase" />{' '}
+                        {/* 👈 Renders at /#/app/ */}
+                        <Route path="/lowercase" element={<Lowercase />} />
+                    </Routes>
+                </HashRouter>
             </main>
             <footer id="footer"></footer>
         </div>
