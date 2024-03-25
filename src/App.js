@@ -1,6 +1,6 @@
 import logo from './utils/abc-logo.svg';
 import './App.css';
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Uppercase from './routes/Uppercase';
 import Lowercase from './routes/Lowercase';
 
@@ -25,36 +25,36 @@ function App() {
                 <div className="col-lg-8 clearfix">
                     <ul className="nav font-14 font-poppins clearfix margin-0 padding-0 pull-right-lg">
                         <li>
-                            <a
+                            <Link
                                 className="color-white color-white-hover padding-20"
-                                href="/uppercase"
+                                to="/uppercase"
                             >
                                 Uppercase Letters
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                                 className="color-white color-white-hover padding-20"
-                                href="/lowercase"
+                                to="/lowercase"
                             >
                                 Lowercase Letters
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                                 className="color-white color-white-hover padding-20"
-                                href="sight-words-1"
+                                to="/sight-words"
                             >
-                                Sight Words 1
-                            </a>
+                                Sight Words
+                            </Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                                 className="color-white color-white-hover padding-20"
-                                href="sight-words-2"
+                                to="/sight-words-2"
                             >
                                 Sight Words 2
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a
@@ -68,16 +68,10 @@ function App() {
                 </div>
             </header>
             <main id="main">
-                <HashRouter basename="/read-pixels">
-                    <Routes>
-                        <Route path="/uppercase" element={<Uppercase />} />{' '}
-                        {/* 👈 Renders at /#/app/ */}
-                        <Route path="/lowercase" element={<Lowercase />} />
-                    </Routes>
-                </HashRouter>
-
                 <Routes>
-                    <Route path="/uppercase" element={<Uppercase />} />
+                    <Route path="/uppercase" element={<Uppercase />} />{' '}
+                    {/* 👈 Renders at /#/app/ */}
+                    <Route path="/lowercase" element={<Lowercase />} />
                 </Routes>
             </main>
             <footer id="footer"></footer>

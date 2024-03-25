@@ -7,7 +7,7 @@ import './king.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <HashRouter>
+    <HashRouter basename="/">
         <App />
     </HashRouter>
 );
