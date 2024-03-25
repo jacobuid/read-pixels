@@ -59,6 +59,55 @@ function DEFAULT_LOWERCASE() {
         { value: 'z', flag: false },
     ];
 }
+function DEFAULT_SIGHT_WORDS_ONE() {
+    return [
+        { value: 'he', flag: false },
+        { value: 'she', flag: false },
+        { value: 'me', flag: false },
+        { value: 'the', flag: false },
+        { value: 'we', flag: false },
+        { value: 'to', flag: false },
+        { value: 'you', flag: false },
+        { value: 'love', flag: false },
+        { value: 'go', flag: false },
+    ];
+}
+
+function DEFAULT_SIGHT_WORDS_TWO() {
+    return [
+        { value: 'so', flag: false },
+        { value: 'or', flag: false },
+        { value: 'are', flag: false },
+        { value: 'of', flag: false },
+        { value: 'be', flag: false },
+        { value: 'no', flag: false },
+        { value: 'do', flag: false },
+        { value: 'for', flag: false },
+        { value: 'look', flag: false },
+    ];
+}
+
+function DEFAULT_SIGHT_WORDS_THREE() {
+    return [
+        { value: 'oh', flag: false },
+        { value: 'boy', flag: false },
+        { value: 'they', flag: false },
+        { value: 'there', flag: false },
+        { value: 'two', flag: false },
+        { value: 'said', flag: false },
+        { value: 'girl', flag: false },
+        { value: 'little', flag: false },
+        { value: 'her', flag: false },
+        { value: 'does', flag: false },
+        { value: 'goes', flag: false },
+    ];
+}
 
 // 👇️ named exports
-export { DEFAULT_UPPERCASE, DEFAULT_LOWERCASE };
+export {
+    DEFAULT_UPPERCASE,
+    DEFAULT_LOWERCASE,
+    DEFAULT_SIGHT_WORDS_ONE,
+    DEFAULT_SIGHT_WORDS_TWO,
+    DEFAULT_SIGHT_WORDS_THREE,
+};

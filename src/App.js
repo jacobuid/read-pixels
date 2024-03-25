@@ -3,6 +3,9 @@ import './App.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import Uppercase from './routes/Uppercase';
 import Lowercase from './routes/Lowercase';
+import SightWordsOne from './routes/SightWordsOne';
+import SightWordsTwo from './routes/SightWordsTwo';
+import SightWordsThree from './routes/SightWordsThree';
 
 function App() {
     return (
@@ -43,9 +46,9 @@ function App() {
                         <li>
                             <Link
                                 className="color-white color-white-hover padding-20"
-                                to="/sight-words"
+                                to="/sight-words-1"
                             >
-                                Sight Words
+                                Sight Words Level 1
                             </Link>
                         </li>
                         <li>
@@ -53,7 +56,15 @@ function App() {
                                 className="color-white color-white-hover padding-20"
                                 to="/sight-words-2"
                             >
-                                Sight Words 2
+                                Sight Words Level 2
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="color-white color-white-hover padding-20"
+                                to="/sight-words-3"
+                            >
+                                Sight Words Level 3
                             </Link>
                         </li>
                         <li>
@@ -72,6 +83,12 @@ function App() {
                     <Route path="/uppercase" element={<Uppercase />} />{' '}
                     {/* 👈 Renders at /#/app/ */}
                     <Route path="/lowercase" element={<Lowercase />} />
+                    <Route path="/sight-words-1" element={<SightWordsOne />} />
+                    <Route path="/sight-words-2" element={<SightWordsTwo />} />
+                    <Route
+                        path="/sight-words-3"
+                        element={<SightWordsThree />}
+                    />
                 </Routes>
             </main>
             <footer id="footer"></footer>
