@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { DEFAULT_SIGHT_WORDS_ONE } from '../utils/data';
+import { DEFAULT_SIGHT_WORDS_ONE, YOUTUBE_URL } from '../utils/data';
 
 function SightWordsOne() {
     const [letters, setletters] = useState(DEFAULT_SIGHT_WORDS_ONE);
     const [current, setcurrent] = useState(0);
 
     let timeout = 0;
+    const video = YOUTUBE_URL(1);
 
     useEffect(() => {
         // Runs on component mounting
@@ -79,13 +80,32 @@ function SightWordsOne() {
             >
                 {current}
             </div>
-            <button className="correct" onClick={correct}>
-                Right
-            </button>
-            <button className="wrong" onClick={incorrect}>
-                Wrong
-            </button>
-            <button onClick={reset}>Reset</button>
+            <div>
+                <button className="correct" onClick={correct}>
+                    Right
+                </button>
+                <button className="wrong" onClick={incorrect}>
+                    Wrong
+                </button>
+                <button onClick={reset}>Reset</button>
+            </div>
+            <br />
+            <br />
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gIZjrcG9pW0?si=3nSHyyeIndVV4TJm"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+            ></iframe>
+            <br />
+            <br />
+            <a className="url" href={video}>
+                Sight Words 1
+            </a>
         </div>
     );
 }

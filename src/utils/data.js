@@ -61,29 +61,34 @@ function DEFAULT_LOWERCASE() {
 }
 function DEFAULT_SIGHT_WORDS_ONE() {
     return [
-        { value: 'he', flag: false },
-        { value: 'she', flag: false },
-        { value: 'me', flag: false },
-        { value: 'the', flag: false },
+        { value: 'an', flag: false },
+        { value: 'at', flag: false },
+        { value: 'be', flag: false },
         { value: 'we', flag: false },
         { value: 'to', flag: false },
+        { value: 'the', flag: false },
+        { value: 'is', flag: false },
+        { value: 'it', flag: false },
+        { value: 'in', flag: false },
+        { value: 'are', flag: false },
         { value: 'you', flag: false },
-        { value: 'love', flag: false },
-        { value: 'go', flag: false },
     ];
 }
 
 function DEFAULT_SIGHT_WORDS_TWO() {
     return [
-        { value: 'so', flag: false },
-        { value: 'or', flag: false },
-        { value: 'are', flag: false },
-        { value: 'of', flag: false },
-        { value: 'be', flag: false },
-        { value: 'no', flag: false },
-        { value: 'do', flag: false },
         { value: 'for', flag: false },
-        { value: 'look', flag: false },
+        { value: 'by', flag: false },
+        { value: 'as', flag: false },
+        { value: 'of', flag: false },
+        { value: 'he', flag: false },
+        { value: 'she', flag: false },
+        { value: 'was', flag: false },
+        { value: 'with', flag: false },
+        { value: 'but', flag: false },
+        { value: 'can', flag: false },
+        { value: 'I', flag: false },
+        { value: 'a', flag: false },
     ];
 }
 
@@ -103,6 +108,28 @@ function DEFAULT_SIGHT_WORDS_THREE() {
     ];
 }
 
+function YOUTUBE_URL(number) {
+    if (number === 9) {
+        return '';
+    } else if (number === 8) {
+        return '';
+    } else if (number === 7) {
+        return '';
+    } else if (number === 6) {
+        return '';
+    } else if (number === 5) {
+        return '';
+    } else if (number === 4) {
+        return '';
+    } else if (number === 3) {
+        return '';
+    } else if (number === 2) {
+        return 'https://youtu.be/E0vWOwIflTs';
+    } else {
+        return 'https://youtu.be/gIZjrcG9pW0';
+    }
+}
+
 // 👇️ named exports
 export {
     DEFAULT_UPPERCASE,
@@ -110,4 +137,5 @@ export {
     DEFAULT_SIGHT_WORDS_ONE,
     DEFAULT_SIGHT_WORDS_TWO,
     DEFAULT_SIGHT_WORDS_THREE,
+    YOUTUBE_URL,
 };

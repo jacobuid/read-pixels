@@ -56,8 +56,12 @@ button.wrong{
 #main{
   background: url('/public/bg1.jpg');
   padding:40px 16px;
-  height: calc(100vh - 76px);
+  min-height: calc(100vh - 76px);
   box-sizing: border-box;
+}
+
+.url{
+  font-size: larger;
 }
 
 .content {
