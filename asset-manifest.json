@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/read-pixels/static/css/main.cf780922.css",
-    "main.js": "/read-pixels/static/js/main.d57a27c6.js",
+    "main.css": "/read-pixels/static/css/main.6c0e2d27.css",
+    "main.js": "/read-pixels/static/js/main.8d1ad44b.js",
     "static/js/787.174abbef.chunk.js": "/read-pixels/static/js/787.174abbef.chunk.js",
     "static/media/bg1.jpg": "/read-pixels/static/media/bg1.411eaf8dbd0a332b59be.jpg",
     "static/media/Poppins-Thin.ttf": "/read-pixels/static/media/Poppins-Thin.59ff6a729e30c99b478e.ttf",
@@ -16,12 +16,12 @@
     "static/media/retro-gaming.ttf": "/read-pixels/static/media/retro-gaming.c1a52a602585b2d6baf8.ttf",
     "static/media/abc-logo.svg": "/read-pixels/static/media/abc-logo.ad27a39955713e59bb9870efecd85e08.svg",
     "index.html": "/read-pixels/index.html",
-    "main.cf780922.css.map": "/read-pixels/static/css/main.cf780922.css.map",
-    "main.d57a27c6.js.map": "/read-pixels/static/js/main.d57a27c6.js.map",
+    "main.6c0e2d27.css.map": "/read-pixels/static/css/main.6c0e2d27.css.map",
+    "main.8d1ad44b.js.map": "/read-pixels/static/js/main.8d1ad44b.js.map",
     "787.174abbef.chunk.js.map": "/read-pixels/static/js/787.174abbef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf780922.css",
-    "static/js/main.d57a27c6.js"
+    "static/css/main.6c0e2d27.css",
+    "static/js/main.8d1ad44b.js"
   ]
 }
