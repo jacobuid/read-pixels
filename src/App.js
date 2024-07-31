@@ -65,6 +65,54 @@ function App() {
                                 Sight Words Level 3
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                className="color-white color-white-hover padding-20"
+                                to="/sight-words-4"
+                            >
+                                Sight Words Level 4
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="color-white color-white-hover padding-20"
+                                to="/sight-words-5"
+                            >
+                                Sight Words Level 5
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="color-white color-white-hover padding-20"
+                                to="/sight-words-6"
+                            >
+                                Sight Words Level 6
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="color-white color-white-hover padding-20"
+                                to="/sight-words-7"
+                            >
+                                Sight Words Level 7
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="color-white color-white-hover padding-20"
+                                to="/sight-words-8"
+                            >
+                                Sight Words Level 8
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="color-white color-white-hover padding-20"
+                                to="/sight-words-9"
+                            >
+                                Sight Words Level 9
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </header>
@@ -84,6 +132,30 @@ function App() {
                     <Route
                         path="/sight-words-3"
                         element={<SightWords number={3} />}
+                    />
+                    <Route
+                        path="/sight-words-4"
+                        element={<SightWords number={4} />}
+                    />
+                    <Route
+                        path="/sight-words-5"
+                        element={<SightWords number={5} />}
+                    />
+                    <Route
+                        path="/sight-words-6"
+                        element={<SightWords number={6} />}
+                    />
+                    <Route
+                        path="/sight-words-7"
+                        element={<SightWords number={7} />}
+                    />
+                    <Route
+                        path="/sight-words-8"
+                        element={<SightWords number={8} />}
+                    />
+                    <Route
+                        path="/sight-words-9"
+                        element={<SightWords number={9} />}
                     />
                 </Routes>
             </main>

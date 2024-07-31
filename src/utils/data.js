@@ -61,17 +61,94 @@ function DEFAULT_LOWERCASE() {
 }
 function DEFAULT_SIGHT_WORDS(number) {
     if (number === 9) {
-        return '';
+        return [
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+        ];
     } else if (number === 8) {
-        return '';
+        return [
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+            { value: 'aaa', flag: false },
+        ];
     } else if (number === 7) {
-        return '';
+        return [
+            { value: 'could', flag: false },
+            { value: 'no', flag: false },
+            { value: 'make', flag: false },
+            { value: 'than', flag: false },
+            { value: 'first', flag: false },
+            { value: 'been', flag: false },
+            { value: 'its', flag: false },
+            { value: 'who', flag: false },
+            { value: 'now', flag: false },
+            { value: 'people', flag: false },
+            { value: 'my', flag: false },
+            { value: 'made', flag: false },
+        ];
     } else if (number === 6) {
-        return '';
+        return [
+            { value: 'so', flag: false },
+            { value: 'these', flag: false },
+            { value: 'would', flag: false },
+            { value: 'other', flag: false },
+            { value: 'into', flag: false },
+            { value: 'has', flag: false },
+            { value: 'more', flag: false },
+            { value: 'two', flag: false },
+            { value: 'like', flag: false },
+            { value: 'him', flag: false },
+            { value: 'see', flag: false },
+            { value: 'time', flag: false },
+        ];
     } else if (number === 5) {
-        return '';
+        return [
+            { value: 'which', flag: false },
+            { value: 'what', flag: false },
+            { value: 'where', flag: false },
+            { value: 'will', flag: false },
+            { value: 'about', flag: false },
+            { value: 'up', flag: false },
+            { value: 'one', flag: false },
+            { value: 'them', flag: false },
+            { value: 'then', flag: false },
+            { value: 'many', flag: false },
+            { value: 'some', flag: false },
+        ];
     } else if (number === 4) {
-        return '';
+        return [
+            { value: 'his', flag: false },
+            { value: 'her', flag: false },
+            { value: 'do', flag: false },
+            { value: 'if', flag: false },
+            { value: 'all', flag: false },
+            { value: 'not', flag: false },
+            { value: 'or', flag: false },
+            { value: 'your', flag: false },
+            { value: 'this', flag: false },
+            { value: 'that', flag: false },
+            { value: 'on', flag: false },
+            { value: 'use', flag: false },
+        ];
     } else if (number === 3) {
         return [
             { value: 'how', flag: false },
@@ -126,13 +203,25 @@ function YOUTUBE_URLS(number) {
     } else if (number === 8) {
         return '';
     } else if (number === 7) {
-        return '';
+        return {
+            link: 'https://youtu.be/GHN6bbcseuU',
+            embed: 'https://www.youtube.com/embed/GHN6bbcseuU',
+        };
     } else if (number === 6) {
-        return '';
+        return {
+            link: 'https://youtu.be/BMH8CBNgo8w',
+            embed: 'https://www.youtube.com/embed/BMH8CBNgo8w',
+        };
     } else if (number === 5) {
-        return '';
+        return {
+            link: 'https://youtu.be/6pQvG6kZUTs',
+            embed: 'https://www.youtube.com/embed/6pQvG6kZUTs',
+        };
     } else if (number === 4) {
-        return '';
+        return {
+            link: 'https://youtu.be/XChcUZHW_SM',
+            embed: 'https://www.youtube.com/embed/XChcUZHW_SM',
+        };
     } else if (number === 3) {
         return {
             link: 'https://youtu.be/xi8U7bCOm6c',
