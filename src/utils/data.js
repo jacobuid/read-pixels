@@ -62,33 +62,33 @@ function DEFAULT_LOWERCASE() {
 function DEFAULT_SIGHT_WORDS(number) {
     if (number === 9) {
         return [
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
+            { value: 'called', flag: false },
+            { value: 'just', flag: false },
+            { value: 'most', flag: false },
+            { value: 'know', flag: false },
+            { value: 'red', flag: false },
+            { value: 'blue', flag: false },
+            { value: 'yellow', flag: false },
+            { value: 'day', flag: false },
+            { value: 'away', flag: false },
+            { value: 'look', flag: false },
+            { value: 'jump', flag: false },
+            { value: 'play', flag: false },
         ];
     } else if (number === 8) {
         return [
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
-            { value: 'aaa', flag: false },
+            { value: 'over', flag: false },
+            { value: 'did', flag: false },
+            { value: 'down', flag: false },
+            { value: 'only', flag: false },
+            { value: 'way', flag: false },
+            { value: 'find', flag: false },
+            { value: 'may', flag: false },
+            { value: 'water', flag: false },
+            { value: 'long', flag: false },
+            { value: 'little', flag: false },
+            { value: 'very', flag: false },
+            { value: 'after', flag: false },
         ];
     } else if (number === 7) {
         return [
@@ -199,9 +199,15 @@ function DEFAULT_SIGHT_WORDS(number) {
 
 function YOUTUBE_URLS(number) {
     if (number === 9) {
-        return '';
+        return {
+            link: 'https://youtu.be/SuxSWR6O078',
+            embed: 'https://www.youtube.com/embed/SuxSWR6O078',
+        };
     } else if (number === 8) {
-        return '';
+        return {
+            link: 'https://youtu.be/vrbM1B4w_i8',
+            embed: 'https://www.youtube.com/embed/vrbM1B4w_i8',
+        };
     } else if (number === 7) {
         return {
             link: 'https://youtu.be/GHN6bbcseuU',
