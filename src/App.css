@@ -64,11 +64,15 @@ button.wrong{
   font-size: larger;
 }
 
+.iframe{
+  width: 100%;
+}
+
 .content {
   max-width: 1000px;
   margin: auto;
   background: rgba(256, 256, 256, .8);
-  padding: 40px 0;
+  padding: 40px 16px;
   text-align: center;
 }
 

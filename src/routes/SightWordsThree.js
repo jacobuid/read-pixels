@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { DEFAULT_SIGHT_WORDS_THREE } from '../utils/data';
+import { DEFAULT_SIGHT_WORDS, YOUTUBE_URLS } from '../utils/data';
 
 function SightWordsThree() {
-    const [letters, setletters] = useState(DEFAULT_SIGHT_WORDS_THREE);
+    const [letters, setletters] = useState(DEFAULT_SIGHT_WORDS(3));
     const [current, setcurrent] = useState(0);
 
     let timeout = 0;
+    const video = YOUTUBE_URLS(3);
 
     useEffect(() => {
         // Runs on component mounting
@@ -13,7 +14,7 @@ function SightWordsThree() {
     }, []);
 
     let getLetter = (defaults) => {
-        let index = Math.floor(Math.random() * (10 - 0 + 1) + 0);
+        let index = Math.floor(Math.random() * (8 - 0 + 1) + 0);
         let currentLetters = defaults || letters;
         if (currentLetters[index].flag === true) {
             timeout++;
@@ -54,7 +55,7 @@ function SightWordsThree() {
     }
 
     let reset = function () {
-        let defaults = DEFAULT_SIGHT_WORDS_THREE();
+        let defaults = DEFAULT_SIGHT_WORDS(3);
         setletters(defaults);
         let nextLetter = getLetter(defaults);
         setcurrent(nextLetter);
@@ -79,13 +80,33 @@ function SightWordsThree() {
             >
                 {current}
             </div>
-            <button className="correct" onClick={correct}>
-                Right
-            </button>
-            <button className="wrong" onClick={incorrect}>
-                Wrong
-            </button>
-            <button onClick={reset}>Reset</button>
+            <div>
+                <button className="correct" onClick={correct}>
+                    Right
+                </button>
+                <button className="wrong" onClick={incorrect}>
+                    Wrong
+                </button>
+                <button onClick={reset}>Reset</button>
+            </div>
+            <br />
+            <br />
+            <iframe
+                className="iframe"
+                width="560"
+                height="315"
+                src={video.embed}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+            ></iframe>
+            <br />
+            <br />
+            <a className="url" href={video.link}>
+                Sight Words 3
+            </a>
         </div>
     );
 }

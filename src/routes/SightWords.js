@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { DEFAULT_SIGHT_WORDS_ONE, YOUTUBE_URL } from '../utils/data';
+import { DEFAULT_SIGHT_WORDS, YOUTUBE_URLS } from '../utils/data';
 
-function SightWordsOne() {
-    const [letters, setletters] = useState(DEFAULT_SIGHT_WORDS_ONE);
+function SightWords(props) {
+    const { number } = props;
+    const [letters, setletters] = useState(DEFAULT_SIGHT_WORDS(number));
     const [current, setcurrent] = useState(0);
 
     let timeout = 0;
-    const video = YOUTUBE_URL(1);
+    const video = YOUTUBE_URLS(number);
 
     useEffect(() => {
         // Runs on component mounting
@@ -55,7 +56,7 @@ function SightWordsOne() {
     }
 
     let reset = function () {
-        let defaults = DEFAULT_SIGHT_WORDS_ONE();
+        let defaults = DEFAULT_SIGHT_WORDS(number);
         setletters(defaults);
         let nextLetter = getLetter(defaults);
         setcurrent(nextLetter);
@@ -63,7 +64,7 @@ function SightWordsOne() {
 
     return (
         <div className="content">
-            <h1>Sight Words Level 1</h1>
+            <h1>Sight Words Level {number}</h1>
             <hr />
             <div id="letters">
                 {letters.map(function (letter, i) {
@@ -92,9 +93,10 @@ function SightWordsOne() {
             <br />
             <br />
             <iframe
+                className="iframe"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/gIZjrcG9pW0?si=3nSHyyeIndVV4TJm"
+                src={video.embed}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -103,11 +105,11 @@ function SightWordsOne() {
             ></iframe>
             <br />
             <br />
-            <a className="url" href={video}>
-                Sight Words 1
+            <a className="url" href={video.link}>
+                Sight Words {number}
             </a>
         </div>
     );
 }
 
-export default SightWordsOne;
+export default SightWords;

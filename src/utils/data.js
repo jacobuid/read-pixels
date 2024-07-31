@@ -59,56 +59,7 @@ function DEFAULT_LOWERCASE() {
         { value: 'z', flag: false },
     ];
 }
-function DEFAULT_SIGHT_WORDS_ONE() {
-    return [
-        { value: 'an', flag: false },
-        { value: 'at', flag: false },
-        { value: 'be', flag: false },
-        { value: 'we', flag: false },
-        { value: 'to', flag: false },
-        { value: 'the', flag: false },
-        { value: 'is', flag: false },
-        { value: 'it', flag: false },
-        { value: 'in', flag: false },
-        { value: 'are', flag: false },
-        { value: 'you', flag: false },
-    ];
-}
-
-function DEFAULT_SIGHT_WORDS_TWO() {
-    return [
-        { value: 'for', flag: false },
-        { value: 'by', flag: false },
-        { value: 'as', flag: false },
-        { value: 'of', flag: false },
-        { value: 'he', flag: false },
-        { value: 'she', flag: false },
-        { value: 'was', flag: false },
-        { value: 'with', flag: false },
-        { value: 'but', flag: false },
-        { value: 'can', flag: false },
-        { value: 'I', flag: false },
-        { value: 'a', flag: false },
-    ];
-}
-
-function DEFAULT_SIGHT_WORDS_THREE() {
-    return [
-        { value: 'oh', flag: false },
-        { value: 'boy', flag: false },
-        { value: 'they', flag: false },
-        { value: 'there', flag: false },
-        { value: 'two', flag: false },
-        { value: 'said', flag: false },
-        { value: 'girl', flag: false },
-        { value: 'little', flag: false },
-        { value: 'her', flag: false },
-        { value: 'does', flag: false },
-        { value: 'goes', flag: false },
-    ];
-}
-
-function YOUTUBE_URL(number) {
+function DEFAULT_SIGHT_WORDS(number) {
     if (number === 9) {
         return '';
     } else if (number === 8) {
@@ -122,11 +73,81 @@ function YOUTUBE_URL(number) {
     } else if (number === 4) {
         return '';
     } else if (number === 3) {
-        return '';
+        return [
+            { value: 'how', flag: false },
+            { value: 'had', flag: false },
+            { value: 'there', flag: false },
+            { value: 'their', flag: false },
+            { value: 'they', flag: false },
+            { value: 'were', flag: false },
+            { value: 'have', flag: false },
+            { value: 'from', flag: false },
+            { value: 'each', flag: false },
+            { value: 'word', flag: false },
+            { value: 'said', flag: false },
+            { value: 'when', flag: false },
+        ];
     } else if (number === 2) {
-        return 'https://youtu.be/E0vWOwIflTs';
+        return [
+            { value: 'for', flag: false },
+            { value: 'by', flag: false },
+            { value: 'as', flag: false },
+            { value: 'of', flag: false },
+            { value: 'he', flag: false },
+            { value: 'she', flag: false },
+            { value: 'was', flag: false },
+            { value: 'with', flag: false },
+            { value: 'but', flag: false },
+            { value: 'can', flag: false },
+            { value: 'I', flag: false },
+            { value: 'a', flag: false },
+        ];
     } else {
-        return 'https://youtu.be/gIZjrcG9pW0';
+        // DEFAULT Sight Words 1
+        return [
+            { value: 'an', flag: false },
+            { value: 'at', flag: false },
+            { value: 'be', flag: false },
+            { value: 'we', flag: false },
+            { value: 'to', flag: false },
+            { value: 'the', flag: false },
+            { value: 'is', flag: false },
+            { value: 'it', flag: false },
+            { value: 'in', flag: false },
+            { value: 'are', flag: false },
+            { value: 'you', flag: false },
+        ];
+    }
+}
+
+function YOUTUBE_URLS(number) {
+    if (number === 9) {
+        return '';
+    } else if (number === 8) {
+        return '';
+    } else if (number === 7) {
+        return '';
+    } else if (number === 6) {
+        return '';
+    } else if (number === 5) {
+        return '';
+    } else if (number === 4) {
+        return '';
+    } else if (number === 3) {
+        return {
+            link: 'https://youtu.be/xi8U7bCOm6c',
+            embed: 'https://www.youtube.com/embed/xi8U7bCOm6c',
+        };
+    } else if (number === 2) {
+        return {
+            link: 'https://youtu.be/E0vWOwIflTs',
+            embed: 'https://www.youtube.com/embed/E0vWOwIflTs',
+        };
+    } else {
+        return {
+            link: 'https://youtu.be/gIZjrcG9pW0',
+            embed: 'https://www.youtube.com/embed/gIZjrcG9pW0',
+        };
     }
 }
 
@@ -134,8 +155,6 @@ function YOUTUBE_URL(number) {
 export {
     DEFAULT_UPPERCASE,
     DEFAULT_LOWERCASE,
-    DEFAULT_SIGHT_WORDS_ONE,
-    DEFAULT_SIGHT_WORDS_TWO,
-    DEFAULT_SIGHT_WORDS_THREE,
-    YOUTUBE_URL,
+    DEFAULT_SIGHT_WORDS,
+    YOUTUBE_URLS,
 };

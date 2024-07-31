@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { DEFAULT_SIGHT_WORDS_TWO, YOUTUBE_URL } from '../utils/data';
+import { DEFAULT_SIGHT_WORDS, YOUTUBE_URLS } from '../utils/data';
 
 function SightWordsTwo() {
-    const [letters, setletters] = useState(DEFAULT_SIGHT_WORDS_TWO);
+    const [letters, setletters] = useState(DEFAULT_SIGHT_WORDS(2));
     const [current, setcurrent] = useState(0);
 
-    const video = YOUTUBE_URL(1);
-
     let timeout = 0;
+    const video = YOUTUBE_URLS(2);
 
     useEffect(() => {
         // Runs on component mounting
@@ -56,7 +55,7 @@ function SightWordsTwo() {
     }
 
     let reset = function () {
-        let defaults = DEFAULT_SIGHT_WORDS_TWO();
+        let defaults = DEFAULT_SIGHT_WORDS(2);
         setletters(defaults);
         let nextLetter = getLetter(defaults);
         setcurrent(nextLetter);
@@ -93,9 +92,10 @@ function SightWordsTwo() {
             <br />
             <br />
             <iframe
+                className="iframe"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/E0vWOwIflTs?si=eZMhBn5WWnCuQwW8"
+                src={video.embed}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -104,7 +104,7 @@ function SightWordsTwo() {
             ></iframe>
             <br />
             <br />
-            <a className="url" href={video}>
+            <a className="url" href={video.link}>
                 Sight Words 2
             </a>
         </div>

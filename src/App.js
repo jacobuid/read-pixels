@@ -3,9 +3,7 @@ import './App.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import Uppercase from './routes/Uppercase';
 import Lowercase from './routes/Lowercase';
-import SightWordsOne from './routes/SightWordsOne';
-import SightWordsTwo from './routes/SightWordsTwo';
-import SightWordsThree from './routes/SightWordsThree';
+import SightWords from './routes/SightWords';
 
 function App() {
     return (
@@ -67,14 +65,6 @@ function App() {
                                 Sight Words Level 3
                             </Link>
                         </li>
-                        <li>
-                            <a
-                                className="color-white color-white-hover padding-20"
-                                href="http://www.youtube.com"
-                            >
-                                Videos
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </header>
@@ -83,11 +73,17 @@ function App() {
                     <Route path="/uppercase" element={<Uppercase />} />{' '}
                     {/* 👈 Renders at /#/app/ */}
                     <Route path="/lowercase" element={<Lowercase />} />
-                    <Route path="/sight-words-1" element={<SightWordsOne />} />
-                    <Route path="/sight-words-2" element={<SightWordsTwo />} />
+                    <Route
+                        path="/sight-words-1"
+                        element={<SightWords number={1} />}
+                    />
+                    <Route
+                        path="/sight-words-2"
+                        element={<SightWords number={2} />}
+                    />
                     <Route
                         path="/sight-words-3"
-                        element={<SightWordsThree />}
+                        element={<SightWords number={3} />}
                     />
                 </Routes>
             </main>
