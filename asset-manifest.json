@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/read-pixels/static/css/main.8a4b1968.css",
-    "main.js": "/read-pixels/static/js/main.e084e1aa.js",
-    "static/js/787.174abbef.chunk.js": "/read-pixels/static/js/787.174abbef.chunk.js",
+    "main.css": "/read-pixels/static/css/main.c9af2924.css",
+    "main.js": "/read-pixels/static/js/main.e59d602a.js",
+    "static/js/787.6ea14e05.chunk.js": "/read-pixels/static/js/787.6ea14e05.chunk.js",
     "static/media/bg1.jpg": "/read-pixels/static/media/bg1.411eaf8dbd0a332b59be.jpg",
     "static/media/Poppins-Thin.ttf": "/read-pixels/static/media/Poppins-Thin.59ff6a729e30c99b478e.ttf",
     "static/media/Poppins-ExtraLight.ttf": "/read-pixels/static/media/Poppins-ExtraLight.333cb30c20e31999802a.ttf",
@@ -16,12 +16,12 @@
     "static/media/retro-gaming.ttf": "/read-pixels/static/media/retro-gaming.c1a52a602585b2d6baf8.ttf",
     "static/media/abc-logo.svg": "/read-pixels/static/media/abc-logo.ad27a39955713e59bb9870efecd85e08.svg",
     "index.html": "/read-pixels/index.html",
-    "main.8a4b1968.css.map": "/read-pixels/static/css/main.8a4b1968.css.map",
-    "main.e084e1aa.js.map": "/read-pixels/static/js/main.e084e1aa.js.map",
-    "787.174abbef.chunk.js.map": "/read-pixels/static/js/787.174abbef.chunk.js.map"
+    "main.c9af2924.css.map": "/read-pixels/static/css/main.c9af2924.css.map",
+    "main.e59d602a.js.map": "/read-pixels/static/js/main.e59d602a.js.map",
+    "787.6ea14e05.chunk.js.map": "/read-pixels/static/js/787.6ea14e05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a4b1968.css",
-    "static/js/main.e084e1aa.js"
+    "static/css/main.c9af2924.css",
+    "static/js/main.e59d602a.js"
   ]
 }
